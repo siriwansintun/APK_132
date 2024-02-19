@@ -37,7 +37,7 @@ class ProductsController extends Controller
     {
         // select * FROM Products where id = 1
         // $result = Product::find($id);
-        $result = Product::where("product_type", $id)->get();
+        $result = Product::where("id", $id)->get();
         return $result;
 
     }
@@ -57,6 +57,7 @@ class ProductsController extends Controller
         $product->price = $request->pd_price;
  
         $product->save();
+        return ["message"=>"Updated Successful."];
 
     }
 
@@ -65,6 +66,9 @@ class ProductsController extends Controller
      */
     public function destroy(string $id)
     {
-        $result = $result = ['name' => 'destroy', 'paylod'=> $id];
+        $result = Product::where('id', '=', $id)->delete();
+        return ["message"=>"Deleted Successful."];
+        
+        // $result = $result = ['name' => 'destroy', 'paylod'=> $id];
     }
 }
