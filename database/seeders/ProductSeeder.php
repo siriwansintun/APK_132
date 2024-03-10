@@ -20,31 +20,31 @@ class ProductSeeder extends Seeder
         DB::table('products')->insert(
             [
                 [
-                    'product_name' => 'Iphon 14',
+                    'product_name' => 'Blueberry Smoothie',
                     'product_type' => 1,
-                    'price' => 39900,
+                    'price' => 45,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
 
                 ],
                 [
-                    'product_name' => 'Galaxy S20',
+                    'product_name' => 'Chocolate Mousse',
                     'product_type' => 1,
-                    'price' => 25900,
+                    'price' => 50,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'product_name' => 'LG Smart TV',
+                    'product_name' => 'Vanilla Coconut Ice Cream',
                     'product_type' => 2,
-                    'price' => 30900,
+                    'price' => 59,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ],
                 [
-                    'product_name' => 'Samsung Smart TV',
+                    'product_name' => 'Chocolate Fudge Cake',
                     'product_type' => 2,
-                    'price' => 40900,
+                    'price' => 60,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ]
